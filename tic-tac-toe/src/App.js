@@ -1,3 +1,4 @@
+import reset from "./reset.css";
 import Board from "./components/Board.jsx";
 import './App.css';
 
