@@ -27,8 +27,23 @@
   height: 60px;
   border: 1px solid black;
   text-align: center;
+  cursor: pointer;
+  font-size: 30px;
 }
 
 .button {
   margin-top: 10px;
+  background-color: rgb(228, 217, 217);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.gameBox {
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
 }
