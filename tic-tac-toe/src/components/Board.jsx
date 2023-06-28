@@ -1,7 +1,16 @@
 import Square from "./Square";
+import BoardRow from "./BoardRow";
 import Winner from "./Winner";
 
 export default function Board({ xIsNext, squares, onPlay }) {
+
+  const squaresArr = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+  const boardRows = squaresArr.match(/.{1,3}/g).map((row) => {
+    return <BoardRow numbers={row} />
+  })
+
+
 
   const handleCLick = (i) => {
     if (squares[i] || calculateWinner(squares)) {
