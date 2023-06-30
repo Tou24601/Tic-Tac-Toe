@@ -1,4 +1,4 @@
 
-export default function Square({number}) {
-  return <div className="square" onClick={onSquareClick}>{number}</div>;
+export default function Square({value, onSquareClick}) {
+  return <div className="square" onClick={onSquareClick}>{value}</div>;
 }
